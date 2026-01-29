@@ -110,140 +110,230 @@
     </section>
 
     <!-- Skills Section -->
-    <section class="section" id="skills">
+    <section class="section skills-section" id="skills">
+        <div class="skills-hud-bg"></div>
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">&lt;skills&gt;</span>
                 <h2 class="section-title neon-text">Skills</h2>
                 <span class="section-tag">&lt;/skills&gt;</span>
             </div>
-            <div class="skills-grid">
-                <div class="skill-card floating-panel fade-in" data-category="languages">
-                    <div class="panel-corner tl"></div>
-                    <div class="panel-corner tr"></div>
-                    <div class="panel-corner bl"></div>
-                    <div class="panel-corner br"></div>
-                    <div class="skill-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="16 18 22 12 16 6"></polyline>
-                            <polyline points="8 6 2 12 8 18"></polyline>
-                        </svg>
+            <div class="hud-container">
+                <!-- Languages Category -->
+                <div class="hud-category fade-in" data-category="languages">
+                    <div class="hud-category-header">
+                        <span class="hud-icon">🧠</span>
+                        <h3 class="hud-category-title">Languages</h3>
+                        <div class="hud-line"></div>
                     </div>
-                    <h3 class="skill-category-title">Languages</h3>
-                    <div class="skill-bars">
-                        <div class="skill-item">
-                            <span class="skill-name">Java</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
+                    <div class="holo-grid">
+                        <div class="holo-card">
+                            <div class="holo-glow"></div>
+                            <div class="holo-border"></div>
+                            <div class="holo-content">
+                                <svg class="holo-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M2 12h20M12 2v20M4 4l16 16M20 4L4 20" />
+                                </svg>
+                                <span class="holo-name">Java</span>
                             </div>
+                            <div class="holo-scanline"></div>
                         </div>
-                        <div class="skill-item">
-                            <span class="skill-name">JavaScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
+                        <div class="holo-card">
+                            <div class="holo-glow"></div>
+                            <div class="holo-border"></div>
+                            <div class="holo-content">
+                                <svg class="holo-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                                    <path d="M9 9l3 3-3 3M12 15h3" />
+                                </svg>
+                                <span class="holo-name">JavaScript</span>
                             </div>
+                            <div class="holo-scanline"></div>
                         </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Python</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
+                        <div class="holo-card">
+                            <div class="holo-glow"></div>
+                            <div class="holo-border"></div>
+                            <div class="holo-content">
+                                <svg class="holo-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="3" />
+                                    <circle cx="12" cy="12" r="8" />
+                                    <path d="M12 4v2M12 18v2M4 12h2M18 12h2" />
+                                </svg>
+                                <span class="holo-name">Python</span>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-card floating-panel fade-in" data-category="frameworks">
-                    <div class="panel-corner tl"></div>
-                    <div class="panel-corner tr"></div>
-                    <div class="panel-corner bl"></div>
-                    <div class="panel-corner br"></div>
-                    <div class="skill-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                            <line x1="3" y1="9" x2="21" y2="9"></line>
-                            <line x1="9" y1="21" x2="9" y2="9"></line>
-                        </svg>
-                    </div>
-                    <h3 class="skill-category-title">Frameworks</h3>
-                    <div class="skill-bars">
-                        <div class="skill-item">
-                            <span class="skill-name">ReactJS</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="88"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">TailwindCSS</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
+                            <div class="holo-scanline"></div>
                         </div>
                     </div>
                 </div>
-                <div class="skill-card floating-panel fade-in" data-category="databases">
-                    <div class="panel-corner tl"></div>
-                    <div class="panel-corner tr"></div>
-                    <div class="panel-corner bl"></div>
-                    <div class="panel-corner br"></div>
-                    <div class="skill-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                        </svg>
+
+                <!-- Frameworks Category -->
+                <div class="hud-category fade-in" data-category="frameworks">
+                    <div class="hud-category-header">
+                        <span class="hud-icon">⚙️</span>
+                        <h3 class="hud-category-title">Frameworks</h3>
+                        <div class="hud-line"></div>
                     </div>
-                    <h3 class="skill-category-title">Databases</h3>
-                    <div class="skill-bars">
-                        <div class="skill-item">
-                            <span class="skill-name">PostgreSQL</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="82"></div>
+                    <div class="holo-grid">
+                        <div class="holo-card">
+                            <div class="holo-glow"></div>
+                            <div class="holo-border"></div>
+                            <div class="holo-content">
+                                <svg class="holo-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="2" />
+                                    <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(0)" />
+                                    <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)" />
+                                    <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)" />
+                                </svg>
+                                <span class="holo-name">ReactJS</span>
                             </div>
+                            <div class="holo-scanline"></div>
                         </div>
-                        <div class="skill-item">
-                            <span class="skill-name">SQLite3</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="78"></div>
+                        <div class="holo-card">
+                            <div class="holo-glow"></div>
+                            <div class="holo-border"></div>
+                            <div class="holo-content">
+                                <svg class="holo-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                    <path d="M2 17l10 5 10-5" />
+                                    <path d="M2 12l10 5 10-5" />
+                                </svg>
+                                <span class="holo-name">TailwindCSS</span>
                             </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Firebase</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
-                            </div>
+                            <div class="holo-scanline"></div>
                         </div>
                     </div>
                 </div>
-                <div class="skill-card floating-panel fade-in" data-category="tools">
-                    <div class="panel-corner tl"></div>
-                    <div class="panel-corner tr"></div>
-                    <div class="panel-corner bl"></div>
-                    <div class="panel-corner br"></div>
-                    <div class="skill-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path
-                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
-                            </path>
-                        </svg>
+
+                <!-- Databases Category -->
+                <div class="hud-category fade-in" data-category="databases">
+                    <div class="hud-category-header">
+                        <span class="hud-icon">🗄️</span>
+                        <h3 class="hud-category-title">Databases</h3>
+                        <div class="hud-line"></div>
                     </div>
-                    <h3 class="skill-category-title">Tools</h3>
-                    <div class="skill-bars">
-                        <div class="skill-item">
-                            <span class="skill-name">Git & GitHub</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
+                    <div class="holo-grid">
+                        <div class="holo-card">
+                            <div class="holo-glow"></div>
+                            <div class="holo-border"></div>
+                            <div class="holo-content">
+                                <svg class="holo-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3" />
+                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                                </svg>
+                                <span class="holo-name">PostgreSQL</span>
                             </div>
+                            <div class="holo-scanline"></div>
                         </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Linux & Bash</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
+                        <div class="holo-card">
+                            <div class="holo-glow"></div>
+                            <div class="holo-border"></div>
+                            <div class="holo-content">
+                                <svg class="holo-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                                </svg>
+                                <span class="holo-name">SQLite3</span>
                             </div>
+                            <div class="holo-scanline"></div>
                         </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Docker</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
+                        <div class="holo-card">
+                            <div class="holo-glow"></div>
+                            <div class="holo-border"></div>
+                            <div class="holo-content">
+                                <svg class="holo-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M12 2L2 7v10l10 5 10-5V7L12 2z" />
+                                    <path d="M12 12L2 7M12 12v10M12 12l10-5" />
+                                </svg>
+                                <span class="holo-name">Firebase</span>
                             </div>
+                            <div class="holo-scanline"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools Category -->
+                <div class="hud-category fade-in" data-category="tools">
+                    <div class="hud-category-header">
+                        <span class="hud-icon">🛠️</span>
+                        <h3 class="hud-category-title">Tools</h3>
+                        <div class="hud-line"></div>
+                    </div>
+                    <div class="holo-grid holo-grid-5">
+                        <div class="holo-card">
+                            <div class="holo-glow"></div>
+                            <div class="holo-border"></div>
+                            <div class="holo-content">
+                                <svg class="holo-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="4" />
+                                    <path d="M4 12a8 8 0 0 1 8-8" />
+                                    <path d="M12 20a8 8 0 0 0 8-8" />
+                                </svg>
+                                <span class="holo-name">Git</span>
+                            </div>
+                            <div class="holo-scanline"></div>
+                        </div>
+                        <div class="holo-card">
+                            <div class="holo-glow"></div>
+                            <div class="holo-border"></div>
+                            <div class="holo-content">
+                                <svg class="holo-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                                <span class="holo-name">GitHub</span>
+                            </div>
+                            <div class="holo-scanline"></div>
+                        </div>
+                        <div class="holo-card">
+                            <div class="holo-glow"></div>
+                            <div class="holo-border"></div>
+                            <div class="holo-content">
+                                <svg class="holo-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <rect x="3" y="4" width="18" height="16" rx="2" />
+                                    <path d="M7 8l4 4-4 4" />
+                                    <line x1="11" y1="16" x2="17" y2="16" />
+                                </svg>
+                                <span class="holo-name">Linux</span>
+                            </div>
+                            <div class="holo-scanline"></div>
+                        </div>
+                        <div class="holo-card">
+                            <div class="holo-glow"></div>
+                            <div class="holo-border"></div>
+                            <div class="holo-content">
+                                <svg class="holo-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M22 12a10 10 0 1 1-10-10" />
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                </svg>
+                                <span class="holo-name">Docker</span>
+                            </div>
+                            <div class="holo-scanline"></div>
+                        </div>
+                        <div class="holo-card">
+                            <div class="holo-glow"></div>
+                            <div class="holo-border"></div>
+                            <div class="holo-content">
+                                <svg class="holo-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <polyline points="4 17 10 11 4 5" />
+                                    <line x1="12" y1="19" x2="20" y2="19" />
+                                </svg>
+                                <span class="holo-name">Bash</span>
+                            </div>
+                            <div class="holo-scanline"></div>
                         </div>
                     </div>
                 </div>

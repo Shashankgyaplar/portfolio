@@ -3,12 +3,12 @@ import { useState } from 'react'
 const projects = [
     {
         number: '01',
-        title: 'KeyGuardian',
-        subtitle: 'Parental Control & AI Monitoring Platform',
-        tags: ['ElectronJS', 'React', 'Golang', 'Gemini AI'],
+        title: 'CardAdvisor',
+        subtitle: 'Smart Credit Card Advisor for India',
+        tags: ['React', 'Node.js', 'Express', 'MongoDB'],
         description:
-            'A comprehensive parental control application with AI-powered monitoring and real-time dashboard for child safety in the digital space. Features intelligent content analysis and cross-platform support.',
-        link: 'https://github.com/VincentSamuelPaul/keyguardian',
+            'A production-grade web application to help users select, optimize, and evaluate credit cards based on actual spending behavior. Features personalized recommendations and a net yearly benefit calculator.',
+        link: 'https://github.com/Shashankgyaplar/CardAdvisor',
     },
     {
         number: '02',
@@ -50,44 +50,44 @@ export default function Projects() {
                             <article
                                 className={`project__card${expandedIndex === index ? ' expanded' : ''}`}
                                 onClick={() => handleClick(index)}
-                            role="button"
-                            tabIndex={0}
-                            onKeyDown={(e) => e.key === 'Enter' && handleClick(index)}
-                        >
-                            <div className="project__card-inner">
-                                <div className="project__card-front">
-                                    <div className="project__number">{project.number}</div>
-                                    <div className="project__info">
-                                        <h3 className="project__title">{project.title}</h3>
-                                        <p className="project__subtitle">{project.subtitle}</p>
-                                        <div className="project__tags">
-                                            {project.tags.map((tag) => (
-                                                <span key={tag}>{tag}</span>
-                                            ))}
+                                role="button"
+                                tabIndex={0}
+                                onKeyDown={(e) => e.key === 'Enter' && handleClick(index)}
+                            >
+                                <div className="project__card-inner">
+                                    <div className="project__card-front">
+                                        <div className="project__number">{project.number}</div>
+                                        <div className="project__info">
+                                            <h3 className="project__title">{project.title}</h3>
+                                            <p className="project__subtitle">{project.subtitle}</p>
+                                            <div className="project__tags">
+                                                {project.tags.map((tag) => (
+                                                    <span key={tag}>{tag}</span>
+                                                ))}
+                                            </div>
+                                        </div>
+                                        <div className="project__arrow">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                                <path d="M7 17L17 7M17 7H7M17 7v10" />
+                                            </svg>
                                         </div>
                                     </div>
-                                    <div className="project__arrow">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                            <path d="M7 17L17 7M17 7H7M17 7v10" />
-                                        </svg>
+                                    <div className="project__description">
+                                        <p>{project.description}</p>
+                                        <a
+                                            href={project.link}
+                                            className="project__link"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            onClick={(e) => e.stopPropagation()}
+                                        >
+                                            View on GitHub
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                                <path d="M5 12h14M12 5l7 7-7 7" />
+                                            </svg>
+                                        </a>
                                     </div>
                                 </div>
-                                <div className="project__description">
-                                    <p>{project.description}</p>
-                                    <a
-                                        href={project.link}
-                                        className="project__link"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        onClick={(e) => e.stopPropagation()}
-                                    >
-                                        View on GitHub
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                            <path d="M5 12h14M12 5l7 7-7 7" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
                             </article>
                         </div>
                     ))}

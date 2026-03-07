@@ -46,10 +46,10 @@ export default function Projects() {
                 </div>
                 <div className="projects__grid">
                     {projects.map((project, index) => (
-                        <article
-                            className={`project__card reveal${expandedIndex === index ? ' expanded' : ''}`}
-                            key={project.title}
-                            onClick={() => handleClick(index)}
+                        <div className="reveal" key={project.title}>
+                            <article
+                                className={`project__card${expandedIndex === index ? ' expanded' : ''}`}
+                                onClick={() => handleClick(index)}
                             role="button"
                             tabIndex={0}
                             onKeyDown={(e) => e.key === 'Enter' && handleClick(index)}
@@ -88,7 +88,8 @@ export default function Projects() {
                                     </a>
                                 </div>
                             </div>
-                        </article>
+                            </article>
+                        </div>
                     ))}
                 </div>
             </div>

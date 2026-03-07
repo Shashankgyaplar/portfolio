@@ -9,6 +9,7 @@ const projects = [
         description:
             'A production-grade web application to help users select, optimize, and evaluate credit cards based on actual spending behavior. Features personalized recommendations and a net yearly benefit calculator.',
         link: 'https://github.com/Shashankgyaplar/CardAdvisor',
+        liveLink: 'https://card-advisor-snowy.vercel.app/',
     },
     {
         number: '02',
@@ -74,18 +75,34 @@ export default function Projects() {
                                     </div>
                                     <div className="project__description">
                                         <p>{project.description}</p>
-                                        <a
-                                            href={project.link}
-                                            className="project__link"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            onClick={(e) => e.stopPropagation()}
-                                        >
-                                            View on GitHub
-                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                                <path d="M5 12h14M12 5l7 7-7 7" />
-                                            </svg>
-                                        </a>
+                                        <div className="project__links">
+                                            <a
+                                                href={project.link}
+                                                className="project__link"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                onClick={(e) => e.stopPropagation()}
+                                            >
+                                                View on GitHub
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                                </svg>
+                                            </a>
+                                            {project.liveLink && (
+                                                <a
+                                                    href={project.liveLink}
+                                                    className="project__link project__link--live"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    onClick={(e) => e.stopPropagation()}
+                                                >
+                                                    Live Demo
+                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                                                    </svg>
+                                                </a>
+                                            )}
+                                        </div>
                                     </div>
                                 </div>
                             </article>

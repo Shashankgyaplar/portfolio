@@ -1394,3 +1394,18 @@ img {
         scroll-behavior: auto;
     }
 }
+
+.project__links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.project__link--live {
+    color: var(--accent-3);
+}
+
+.project__link--live:hover {
+    color: var(--accent-1);
+}

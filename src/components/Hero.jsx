@@ -1,12 +1,9 @@
+import React from 'react';
+
 export default function Hero() {
+
     return (
         <section className="hero" id="hero">
-            <div className="hero__bg">
-                <div className="hero__gradient"></div>
-                <div className="hero__grid"></div>
-                <div className="hero__orb hero__orb--1"></div>
-                <div className="hero__orb hero__orb--2"></div>
-            </div>
             <div className="container hero__container">
                 <div className="hero__content">
                     <div className="hero__badge reveal">

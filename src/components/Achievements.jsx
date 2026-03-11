@@ -27,7 +27,7 @@ export default function Achievements() {
                 </div>
                 <div className="achievements__grid">
                     {achievements.map((a) => (
-                        <div className="achievement__card reveal" key={a.title}>
+                        <div className="achievement__card bento-item reveal" key={a.title}>
                             <div className={`achievement__rank achievement__rank--${a.type}`}>
                                 <span>{a.rank}</span>
                             </div>

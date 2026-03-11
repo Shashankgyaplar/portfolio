@@ -49,7 +49,7 @@ export default function Projects() {
                     {projects.map((project, index) => (
                         <div className="reveal" key={project.title}>
                             <article
-                                className={`project__card${expandedIndex === index ? ' expanded' : ''}`}
+                                className={`project__card bento-item${expandedIndex === index ? ' expanded' : ''}`}
                                 onClick={() => handleClick(index)}
                                 role="button"
                                 tabIndex={0}

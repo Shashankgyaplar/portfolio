@@ -6,7 +6,7 @@ export default function Education() {
                     <span className="section__tag">05</span>
                     <h2 className="section__title">Education</h2>
                 </div>
-                <div className="education__card reveal">
+                <div className="education__card bento-item reveal">
                     <div className="education__icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                             <path d="M22 10v6M2 10l10-5 10 5-10 5z" />

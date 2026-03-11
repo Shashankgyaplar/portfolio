@@ -96,6 +96,9 @@ const categories = [
 ]
 
 export default function Skills() {
+    // Array of sizes for visual variety
+    const colSpans = ['bento-col-4', 'bento-col-4', 'bento-col-4', 'bento-col-6', 'bento-col-6', 'bento-col-12'];
+
     return (
         <section className="section section--alt" id="skills">
             <div className="container">
@@ -103,14 +106,14 @@ export default function Skills() {
                     <span className="section__tag">02</span>
                     <h2 className="section__title">Skills & Technologies</h2>
                 </div>
-                <div className="skills__grid">
-                    {categories.map(({ title, icon, skills }) => (
-                        <div className="skills__category reveal" key={title}>
-                            <h3 className="skills__category-title">
-                                {icon}
+                <div className="bento-grid">
+                    {categories.map(({ title, icon, skills }, i) => (
+                        <div className={`bento-item reveal ${colSpans[i]}`} key={title}>
+                            <h3 className="skills__category-title" style={{ fontSize: '1.1rem', color: '#fff' }}>
+                                <span style={{ marginRight: '12px', opacity: 1, color: 'var(--accent-1)' }}>{icon}</span>
                                 {title}
                             </h3>
-                            <div className="skills__tags">
+                            <div className="skills__tags" style={{ marginTop: '24px' }}>
                                 {skills.map(({ name, accent }) => (
                                     <span
                                         className={`skill__tag${accent ? ' skill__tag--accent' : ''}`}

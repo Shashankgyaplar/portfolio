@@ -819,6 +819,8 @@ img {
 .project__card:hover {
     background: var(--bg-card-hover);
     border-color: var(--border-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.5);
 }
 
 .project__card-inner {
@@ -881,6 +883,19 @@ img {
     letter-spacing: 0.02em;
 }
 
+.project__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.01);
+    color: var(--text-secondary);
+    transition: all var(--transition-base);
+}
+
 .project__card:hover .project__arrow {
     background: rgba(99, 102, 241, 0.1);
     border-color: rgba(99, 102, 241, 0.2);
@@ -896,7 +911,7 @@ img {
 }
 
 .project__card.expanded .project__description {
-    max-height: 200px;
+    max-height: 500px;
     padding: 0 32px 32px;
 }
 

@@ -25,6 +25,7 @@ const categories = [
         ),
         skills: [
             { name: 'React', accent: true },
+            { name: 'React Native', accent: true },
             { name: 'Flutter' },
             { name: 'TailwindCSS' },
             { name: 'HTML/CSS' },

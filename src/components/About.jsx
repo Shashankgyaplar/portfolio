@@ -49,7 +49,7 @@ export default function About() {
                                 </svg>
                             ),
                             title: 'Focus',
-                            value: 'Full Stack Development & Blockchain',
+                            value: 'MERN Full Stack & Cloud',
                         },
                         {
                             icon: (

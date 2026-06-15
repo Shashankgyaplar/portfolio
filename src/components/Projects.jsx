@@ -29,6 +29,15 @@ const projects = [
             'A blockchain-based decentralized voting application ensuring transparent, tamper-proof elections on Ethereum. Features smart contract-powered voting with verifiable results on-chain.',
         link: 'https://github.com/shashankgyaplar/Voting_app',
     },
+    {
+        number: '04',
+        title: 'BehaviorVault',
+        subtitle: 'Continuous Behavioral Authentication System',
+        tags: ['React Native', 'FastAPI', 'TensorFlow Lite', 'MongoDB'],
+        description:
+            'A continuous behavioral authentication security layer for mobile banking. Verifies user identity in real-time by analyzing keystroke dynamics, swipe patterns, and accelerometer telemetry with adaptive EWMA baselines and silent duress protection.',
+        link: 'https://github.com/Shashankgyaplar/behaviorValut',
+    },
 ]
 
 export default function Projects() {

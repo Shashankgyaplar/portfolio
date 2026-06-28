@@ -26,7 +26,7 @@ export default function Education() {
                         <div className="education__stats">
                             <div className="education__stat">
                                 <span className="education__stat-label">CGPA</span>
-                                <span className="education__stat-value gradient-text">8.89</span>
+                                <span className="education__stat-value gradient-text">8.97</span>
                             </div>
                             <div className="education__stat">
                                 <span className="education__stat-label">Status</span>
